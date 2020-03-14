@@ -10,6 +10,8 @@ Buys items from supreme quickly using selenium, with auto-updating feature
 Heres a quick gif to show you how it works
 
 ![](supremegif.gif)
+
+For one item with good wifi the bot can get it in aprox 4.5 seconds
 ## Limitations
 1. Because it uses selenium the speed it buys the product heavily depends on your internet and computer speed
 2. Not as fast as bots that use other methods
