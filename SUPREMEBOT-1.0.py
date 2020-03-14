@@ -80,7 +80,7 @@ class supremeBot:
     def findItem(self):
 
         bought = 0
-        for i in range(len(items)):
+        for i in range(len(self.items)):
             item = self.items[i]
             self.category = str(item[0]).lower()
             self.itemname = str(item[1])
@@ -138,17 +138,19 @@ class supremeBot:
                         # click on drop down then select correct size
                         self.driver.find_element_by_xpath("//select[@id='size']").click()
                         self.driver.find_element_by_xpath("//select[@id='size']//option[contains(text(), '" + self.size + "')]").click()
+                        # add to basket
+                        self.driver.find_element_by_xpath("//input[@value='add to basket']").click()
+                        bought += 1
                     elif self.size2 in sizes:
                         self.driver.find_element_by_xpath("//select[@id='size']").click()
                         self.driver.find_element_by_xpath("//select[@id='size']//option[contains(text(), '" + self.size2 + "')]").click()
+                        # add to basket
+                        self.driver.find_element_by_xpath("//input[@value='add to basket']").click()
+                        bought += 1    
                     else:
                         print(self.itemname, "doesnt have your size")
-                        continue
 
-                # add to basket
-                self.driver.find_element_by_xpath("//input[@value='add to basket']").click()
-                bought += 1
-                if i == len(items)-1 or (i == len(items)-2 and str(items[len(items)-1][6]).title() == "True"):
+                if i == len(self.items)-1 or (i == len(self.items)-2 and str(self.items[len(self.items)-1][6]).title() == "True"):
                     # if last item checkout
                     self.driver.find_element_by_xpath("//a[@class='button checkout']").click()
                     self.driver.implicitly_wait(5)
