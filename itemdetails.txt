@@ -1,0 +1,25 @@
+***
+Category = hats
+Item Name = Mesh Camp Cap
+Colour = Pale Green
+Backup Colour = Gold
+Size = NA
+Backup Size = NA
+Backup = False
+***
+Category = pants
+Item Name = Work Pant
+Colour = Dusty Blue
+Backup Colour = Black
+Size = 30
+Backup Size = XLarge
+Backup = False
+***
+Category = shirts
+Item Name = Box Shirt
+Colour = White
+Backup Colour = Red
+Size = Small
+Backup Size = Medium
+Backup = False
+***

@@ -1,0 +1,21 @@
+--- checkoutdetails.txt ---
+- Fill in each detail accuratly
+- Follow same format as show origanlly
+- Always leave a gap between the "=" and response, Eg "question = response"
+- If you want to test the program and just play around then enter billing details incorrectly so you dont get charged
+--- itemdetails.txt ---
+- Start and end every item with "***" on a new line
+- make sure category is the correct one, this can be found by going to "https://www.supremenewyork.com/shop/all/" then clicking on the category and looking at the name in the url after "/all/"
+- make sure the item name is fairly correct, if the name you entered is contained in the actual one it will work
+- capitalisation doesnt matter, dw
+- If its an item like an hat, then the size is "NA"
+- for colour and size you can add backups, this will get these options if you original one is out of stock, if this isnt wanted and you want a specific item then make the backup option the same as the first choice
+- The last setting, backup, determines if this item is a last resort item. If this is "True" then if no other items were bought then this backup item will be. This is to be used if you want to get an item but only if you couldnt get any others.
+- There doesnt have to be a backup item, its not a necessity
+- However the backup item MUST be the last one on the list
+--- SUPREMEBOT.exe ---
+- once ready with the 2 text files filled out run the bot a few mins before the drop
+- enter the minute you want the bot to activate on, for drops this will be 0 and for testing it will be what ever minute past the current hour is
+- once this minute hits the bot will buy the items
+- when done in aprox 5 secs you need to complete the captcha to get your cop
+- ignore the geckodriver stuff
